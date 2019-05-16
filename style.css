@@ -13,6 +13,10 @@ Version: 0.1
   width: 100%;
 }
 
+header#top nav >ul {
+  padding-left: 20px;
+}
+
 /* Hero Section */
 #hero-section h1 {
   font-size: 52px;
@@ -143,4 +147,25 @@ body[data-form-submit="regular"] input[type=submit] {
 
 .ascend #footer-outer #footer-widgets .col ul li {
   padding: 0!important;
+}
+
+/* Responsive */
+@media only screen and (max-width: 1000px) and (min-width: 1px) {
+  html body:not(.single-post) #page-header-bg:not(.fullscreen-header) {
+      height: 0px!important;
+      padding: 0!important;
+  }
+
+  #hero-section h1 {
+    font-size: 32px!important;
+    line-height: 52px;
+  }
+
+  #hero-section .nectar-highlighted-text em {
+      font-size: 36px!important;
+  }
+
+  #hero-section .nectar-button span {
+    line-height: 32px!important;
+}
 }
