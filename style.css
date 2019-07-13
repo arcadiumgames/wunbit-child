@@ -69,6 +69,16 @@ body:not([data-button-style*="rounded_shadow"]) .full-width-section .light .nect
   line-height: 24px!important;
 }
 
+/* Team */
+.team-member p.description, .row .col .team-member p.description {
+    padding: 10px 0!important;
+    margin: 0!important;
+    border-bottom: none!important;
+    border-top: none!important;
+    font-size: 12px;
+    line-height: 16px;
+}
+
 /* Mailchimp Form */
 #mc4wp-form-1 input[type=email] {
   width: 60%!important;
