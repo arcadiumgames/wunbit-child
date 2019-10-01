@@ -9,11 +9,16 @@ Version: 0.1
 */
 
 /* Main Menu */
-#header-outer header#top nav > ul.buttons > li.menu-item-has-children> ul.sub-menu {
+#header-outer
+  header#top
+  nav
+  > ul.buttons
+  > li.menu-item-has-children
+  > ul.sub-menu {
   width: 100%;
 }
 
-header#top nav >ul {
+header#top nav > ul {
   padding-left: 20px;
 }
 
@@ -36,7 +41,7 @@ header#top nav >ul {
 }
 
 #hero-section .nectar-button span {
-  border-radius: 4px!important;
+  border-radius: 4px !important;
   border-width: initial;
   font-size: 26px;
   text-transform: none;
@@ -49,67 +54,83 @@ header#top nav >ul {
 }
 
 /* Buttons */
-body:not([data-button-style*="rounded_shadow"]) .full-width-section .light .nectar-button:not(.see-through):not(.see-through-2):not(.see-through-3) {
-  border-radius: 4px!important;
+body:not([data-button-style*="rounded_shadow"])
+  .full-width-section
+  .light
+  .nectar-button:not(.see-through):not(.see-through-2):not(.see-through-3) {
+  border-radius: 4px !important;
   border-width: initial;
 }
 
 /* Nectar */
-.nectar-hor-list-item >.nectar-list-item:first-child {
+.nectar-hor-list-item > .nectar-list-item:first-child {
   font-weight: bold;
 }
 
 .nectar-hor-list-item {
-  border-bottom: 0!important;
+  border-bottom: 0 !important;
 }
 
 /* Toggles */
 .toggle h3 a {
-  font-size: 24px!important;
-  line-height: 24px!important;
+  font-size: 24px !important;
+  line-height: 24px !important;
 }
 
 /* Team */
-.team-member p.description, .row .col .team-member p.description {
-    padding: 10px 0!important;
-    margin: 0!important;
-    border-bottom: none!important;
-    border-top: none!important;
-    font-size: 12px;
-    line-height: 16px;
+.team-member p.description,
+.row .col .team-member p.description {
+  padding: 10px 0 !important;
+  margin: 0 !important;
+  border-bottom: none !important;
+  border-top: none !important;
+  font-size: 12px;
+  line-height: 16px;
+}
+
+.team-member h4 a {
+  color: #444;
+  font-size: 20px !important;
 }
 
 /* Mailchimp Form */
-#mc4wp-form-1 input[type=email] {
-  width: 60%!important;
+#mc4wp-form-1 input[type="email"] {
+  width: 60% !important;
   display: inline;
 }
 
 #mc4wp-form-1 input[type="submit"] {
-  background-color: #ff1053!important;
-  text-transform: none!important;
-  padding: 20px!important;
+  background-color: #ff1053 !important;
+  text-transform: none !important;
+  padding: 20px !important;
   font-size: 16px;
   line-height: 16px;
 }
 
 body[data-button-style="rounded"].ascend .container-wrap input[type="submit"] {
-  background-color: #ff1053!important;
-  border-radius: 4px!important;
+  background-color: #ff1053 !important;
+  border-radius: 4px !important;
   border-width: initial;
   border-style: none;
   font-size: 18px;
   line-height: 24px;
-  text-transform: none!important
+  text-transform: none !important;
 }
 
 #mc4wp-form-1 input[type="submit"]:hover {
-  background-color: #F30045!important;
-  opacity: 1!important;
+  background-color: #f30045 !important;
+  opacity: 1 !important;
 }
 
-body[data-form-style="minimal"] .container-wrap .span_12.light input[type="email"], body[data-form-style="minimal"] .container-wrap .span_12.light input[type="email"] {
-  color: #555!important;
+body[data-form-style="minimal"]
+  .container-wrap
+  .span_12.light
+  input[type="email"],
+body[data-form-style="minimal"]
+  .container-wrap
+  .span_12.light
+  input[type="email"] {
+  color: #555 !important;
   background-color: #fff;
   border-radius: 4px;
   border-width: initial;
@@ -122,29 +143,46 @@ body[data-form-style="minimal"] .container-wrap .span_12.light input[type="email
 }
 
 .cool-timeline .timeline-year .icon-placeholder span {
-    font-family: Hind!important;
+  font-family: Hind !important;
 }
 
-.cool-timeline.compact .timeline-post .timeline-content h2.compact-content-title {
-  font-size: 26px!important;
-  font-weight: 700!important;
+.cool-timeline.compact
+  .timeline-post
+  .timeline-content
+  h2.compact-content-title {
+  font-size: 26px !important;
+  font-weight: 700 !important;
 }
 
-.main-design-6 .cool-timeline.compact.white-timeline .timeline-post .timeline-content .content-title.clt-meta-date {
-  display: none!important;
+.main-design-6
+  .cool-timeline.compact.white-timeline
+  .timeline-post
+  .timeline-content
+  .content-title.clt-meta-date {
+  display: none !important;
 }
 
-#roadmap [class^="icon-"], i[class*=" icon-"] {
-  background-color:
+#roadmap [class^="icon-"],
+i[class*=" icon-"] {
+  background-color: ;
+}
+
+.even .icon-dot-full {
+  left: 0 !important;
+}
+
+.odd .icon-dot-full {
+  left: 100% !important;
 }
 
 /* Popup Maker */
-.pum-theme-5190 .pum-container, .pum-theme-lightbox .pum-container {
-  border: none!important;
-  padding: 80px!important;
+.pum-theme-5190 .pum-container,
+.pum-theme-lightbox .pum-container {
+  border: none !important;
+  padding: 80px !important;
 }
 
-body[data-form-submit="regular"] input[type=submit] {
+body[data-form-submit="regular"] input[type="submit"] {
   margin-top: 20px;
   padding: 20px 30px;
   font-size: 16px;
@@ -156,26 +194,39 @@ body[data-form-submit="regular"] input[type=submit] {
 }
 
 .ascend #footer-outer #footer-widgets .col ul li {
-  padding: 0!important;
+  padding: 0 !important;
+}
+
+/* Counter */
+.eapps-countdown-timer-has-background {
+  padding: 0 !important;
+}
+
+#eapps-countdown-timer-1 .eapps-countdown-timer-item-group-label {
+  font-size: 12px !important;
+}
+
+#eapps-countdown-timer-1 .eapps-countdown-timer-item-group-label {
+  color: #fff !important;
 }
 
 /* Responsive */
 @media only screen and (max-width: 1000px) and (min-width: 1px) {
   html body:not(.single-post) #page-header-bg:not(.fullscreen-header) {
-      height: 0px!important;
-      padding: 0!important;
+    height: 0px !important;
+    padding: 0 !important;
   }
 
   #hero-section h1 {
-    font-size: 32px!important;
+    font-size: 32px !important;
     line-height: 52px;
   }
 
   #hero-section .nectar-highlighted-text em {
-      font-size: 36px!important;
+    font-size: 36px !important;
   }
 
   #hero-section .nectar-button span {
-    line-height: 32px!important;
-}
+    line-height: 32px !important;
+  }
 }
