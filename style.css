@@ -8,6 +8,11 @@ Template: salient
 Version: 0.1
 */
 
+/* General */
+.container-wrap {
+  background: #f9fafc !important;
+}
+
 /* Main Menu */
 #header-outer
   header#top
@@ -20,6 +25,15 @@ Version: 0.1
 
 header#top nav > ul {
   padding-left: 20px;
+}
+
+#header-outer
+  header#top
+  nav
+  > ul.buttons
+  > li.menu-item-has-children
+  > ul.sub-menu {
+  width: max-content;
 }
 
 /* Hero Section */
@@ -38,6 +52,11 @@ header#top nav > ul {
 
 .hero-section-right h2 {
   font-size: 52px;
+}
+
+.hero-social .fa {
+  background: none !important;
+  margin: 5px 0 !important;
 }
 
 #hero-section .nectar-button span {
@@ -190,11 +209,62 @@ body[data-form-submit="regular"] input[type="submit"] {
 
 /* Footer */
 #footer-widgets .textwidget {
-  opacity: 0.7;
+  opacity: 1;
+  font-size: 14px;
 }
 
 .ascend #footer-outer #footer-widgets .col ul li {
   padding: 0 !important;
+}
+
+.ascend #footer-outer #footer-widgets .col ul li a:hover {
+  opacity: 1 !important;
+}
+
+#footer-widgets .textwidget a:hover {
+  opacity: 1 !important;
+}
+
+#footer-outer,
+#nectar_fullscreen_rows > #footer-outer.wpb_row .full-page-inner-wrap {
+  background-color: #4b35ef !important;
+}
+
+#footer-outer #copyright li a i,
+#footer-outer #copyright p {
+  color: #ccc !important;
+  font-size: 14px;
+  padding-top: 20px;
+}
+
+#footer-outer a:not(.nectar-button) {
+  color: #ccc !important;
+}
+
+.ascend #footer-outer #footer-widgets .col ul li a {
+  opacity: 0.7 !important;
+}
+
+.ascend #footer-outer #footer-widgets .col ul li a:hover {
+  opacity: 1 !important;
+}
+
+#footer-outer .footer-languages a {
+  padding-left: 5px;
+  opacity: 0.7;
+}
+
+#footer-outer .footer-languages a:hover {
+  opacity: 1;
+}
+
+body #footer-outer #copyright {
+  background-color: #4b35ef !important;
+}
+
+#footer-outer #copyright li a i,
+#footer-outer #copyright p {
+  border-top: 2px solid hsla(0, 0%, 100%, 0.2) !important;
 }
 
 /* Counter */
@@ -208,6 +278,273 @@ body[data-form-submit="regular"] input[type="submit"] {
 
 #eapps-countdown-timer-1 .eapps-countdown-timer-item-group-label {
   color: #fff !important;
+}
+
+/* Social Share */
+.fa {
+  padding: 20px;
+  font-size: 30px;
+  width: 50px;
+  text-align: center;
+  text-decoration: none;
+  margin: 5px 2px;
+}
+
+.fa:hover {
+  opacity: 0.7;
+}
+
+.fa-facebook {
+  background: #3b5998;
+  color: white;
+}
+
+.fa-twitter {
+  background: #55acee;
+  color: white;
+}
+
+.fa-google {
+  background: #dd4b39;
+  color: white;
+}
+
+.fa-linkedin {
+  background: #007bb5;
+  color: white;
+}
+
+.fa-youtube {
+  background: #bb0000;
+  color: white;
+}
+
+.fa-instagram {
+  background: #125688;
+  color: white;
+}
+
+.fa-pinterest {
+  background: #cb2027;
+  color: white;
+}
+
+.fa-medium {
+  background: #292929;
+  color: white;
+}
+
+.fa-telegram {
+  background: #41b0e3;
+  color: white;
+}
+
+.fa-github {
+  background: #1a1e22;
+  color: white;
+}
+
+.fa-snapchat-ghost {
+  background: #fffc00;
+  color: white;
+  text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+}
+
+.fa-skype {
+  background: #00aff0;
+  color: white;
+}
+
+.fa-android {
+  background: #a4c639;
+  color: white;
+}
+
+.fa-dribbble {
+  background: #ea4c89;
+  color: white;
+}
+
+.fa-vimeo {
+  background: #45bbff;
+  color: white;
+}
+
+.fa-tumblr {
+  background: #2c4762;
+  color: white;
+}
+
+.fa-vine {
+  background: #00b489;
+  color: white;
+}
+
+.fa-foursquare {
+  background: #45bbff;
+  color: white;
+}
+
+.fa-stumbleupon {
+  background: #eb4924;
+  color: white;
+}
+
+.fa-flickr {
+  background: #f40083;
+  color: white;
+}
+
+.fa-yahoo {
+  background: #430297;
+  color: white;
+}
+
+.fa-soundcloud {
+  background: #ff5500;
+  color: white;
+}
+
+.fa-reddit {
+  background: #ff5700;
+  color: white;
+}
+
+.fa-rss {
+  background: #ff6600;
+  color: white;
+}
+
+/* Countdown */
+#eapps-countdown-timer-1 .eapps-countdown-timer-item-group-label {
+  color: rgb(0, 0, 0) !important;
+}
+
+#hero-section #eapps-countdown-timer-1 .eapps-countdown-timer-item-group-label {
+  color: rgb(255, 255, 255) !important;
+}
+
+/* BBPress */
+#bbpress-forums li {
+  font-size: 18px;
+}
+
+#bbpress-forums #bbp-search-form {
+  margin-bottom: 10px;
+}
+
+#bbpress-forums #bbp-search-form #bbp_search {
+  padding: 8px 11px;
+  margin-right: 10px;
+  background: #fbfbfb;
+}
+
+#bbpress-forums .bbp-forum-info .bbp-forum-content {
+  font-size: 14px !important;
+}
+
+#bbpress-forums li.bbp-header {
+  background-color: #4b35ef;
+  background-image: linear-gradient(45deg, #4b35ef 0%, #8f28ed 100%) !important;
+  border-radius: 4px 4px 0 0;
+  color: #fff;
+}
+
+#bbpress-forums li.bbp-body ul.forum,
+#bbpress-forums li.bbp-body ul.topic {
+  border: 0px;
+}
+
+#bbp_search_submit {
+  text-transform: none !important;
+  font-weight: normal;
+}
+
+#bbpress-forums ul.bbp-forums {
+  border: 0px !important;
+}
+
+#bbpress-forums li.bbp-body ul.forum {
+  padding: 10px 10px 10px 30px !important;
+}
+
+#bbpress-forums li.bbp-footer {
+  display: none;
+}
+
+#bbpress-forums div.bbp-breadcrumb p,
+#bbpress-forums div.bbp-topic-tags p {
+  font-size: 16px;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
+.bbp-breadcrumb-current {
+  font-weight: 700;
+  color: #aaa;
+  text-transform: none !important;
+}
+
+.bbp-breadcrumb-sep {
+  color: #aaa;
+}
+
+#bbpress-forums div.bbp-the-content-wrapper textarea.bbp-the-content {
+  font-size: 18px;
+}
+
+/* Register */
+.ihc-register-14 {
+  background-color: #ffffff !important;
+  border-radius: 3px !important;
+  padding: 25px 40px !important;
+  box-shadow: rgba(0, 0, 0, 0.1) 0 0 10px !important;
+  border: none !important;
+  display: block !important;
+  margin: 0 auto !important;
+}
+
+.ihc-login-template-13 {
+  background-color: #ffffff !important;
+  border-radius: 3px !important;
+  padding: 25px 40px !important;
+  box-shadow: rgba(0, 0, 0, 0.1) 0 0 10px !important;
+  border: none !important;
+  display: block !important;
+  margin: 0 auto !important;
+  max-width: 400px;
+}
+
+.ihc-login-template-13 .impu-form-line-fr input[type="text"],
+.ihc-login-template-13 .impu-form-line-fr input[type="password"] {
+  font-size: 14px;
+  background-color: #fafbfc;
+  border: 2px solid #dfe1e6;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  border-radius: 3px;
+  height: 44px;
+  -webkit-transition: background-color 0.2s ease-in-out 0s,
+    border-color 0.2s ease-in-out 0s;
+  transition: background-color 0.2s ease-in-out 0s,
+    border-color 0.2s ease-in-out 0s;
+}
+
+.ihc-login-template-13 .impu-form-links-pass {
+  font-size: 14px !important;
+}
+
+.ihc-login-template-13 .impu-temp5-row-left {
+  margin-top: 0px !important;
+}
+
+body .ihc-register-3 .iump-form-line-register input[type="text"],
+body .ihc-register-3 .iump-form-line-register input[type="password"],
+body .ihc-register-3 .iump-form-line-register input[type="number"],
+body .ihc-register-3 .iump-form-line-register textarea,
+body .ihc-register-3 .iump-form-line-register select,
+body .ihc-register-3 .iump-form-line-register .select2-selection {
+  font-family: Varela Round !important;
 }
 
 /* Responsive */
@@ -228,5 +565,17 @@ body[data-form-submit="regular"] input[type="submit"] {
 
   #hero-section .nectar-button span {
     line-height: 32px !important;
+  }
+}
+
+@media only screen and (max-width: 1280px) and (min-width: 1001px) {
+  #menu-item-20855 {
+    display: none !important;
+  }
+}
+
+@media (min-width: 690px) {
+  .span_5 {
+    width: 100%;
   }
 }
