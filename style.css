@@ -10,10 +10,42 @@ Version: 0.1
 
 /* General */
 .container-wrap {
-  background: #f9fafc !important;
+  background: #fff !important;
+}
+
+.nectar-button span {
+  text-transform: capitalize !important;
+  font-weight: 400 !important;
+  padding: 0 5px;
+  font-size: 18px;
+  line-height: 1.5;
+}
+
+body[data-button-style*="slightly_rounded"] .nectar-button {
+  border-radius: 6px !important;
+}
+
+.col-padding-34 {
+  padding-left: 34% !important;
+  padding-right: 34% !important;
+}
+
+.center {
+  display: block !important;
+  margin: auto;
+}
+
+body h5,
+.row .col h5 {
+  font-size: 24px !important;
+  font-weight: 600 !important;
 }
 
 /* Main Menu */
+#header-outer[data-full-width="true"] header > .container {
+  max-width: 100% !important;
+}
+
 #header-outer
   header#top
   nav
@@ -36,6 +68,119 @@ header#top nav > ul {
   width: max-content;
 }
 
+body header#top nav > ul > li.button_solid_color_2 > a:before,
+body
+  #header-outer.transparent
+  header#top
+  nav
+  > ul
+  > li.button_solid_color_2
+  > a:before {
+  background-color: #61bd4f !important;
+}
+
+body #header-outer.transparent header#top nav > ul > li > a {
+  opacity: 1 !important;
+}
+
+body header#top nav > ul > li[class*="button_solid_color"] > a:hover:before,
+body
+  #header-outer.transparent
+  header#top
+  nav
+  > ul
+  > li[class*="button_solid_color"]
+  > a:hover:before {
+  opacity: 1 !important;
+  background-color: #4b9e3b !important;
+}
+
+body[data-button-style]
+  .full-width-section
+  .light
+  .nectar-button:not(.see-through):not(.see-through-2):not(.see-through-3):hover {
+  background-color: #4b9e3b !important;
+}
+
+/* Home */
+.get-started {
+  background-image: url(https://d2k1ftgv7pobq7.cloudfront.net/meta/p/res/images/97db7688a52a697ea9376a5f0fe5d98f/trellians-2x-2.png);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: 1332px 393px;
+  height: 393px;
+}
+
+.play-better {
+  background: #42548e;
+  background: -webkit-gradient(
+    linear,
+    left top,
+    left bottom,
+    from(#42548e),
+    to(#6b668c)
+  );
+  background: linear-gradient(180deg, #42548e 0%, #6b668c 100%);
+  border-radius: 12px;
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#42548E', endColorstr='#6B668C', GradientType=1);
+}
+
+#wunbit-press > div.row-bg-wrap {
+  background: -webkit-gradient(
+    linear,
+    left top,
+    left bottom,
+    from(#fff),
+    color-stop(46%, #f7ecff),
+    color-stop(74%, #d2ecff),
+    to(#fff)
+  );
+  background: linear-gradient(
+    to bottom,
+    #fff 0%,
+    #f7ecff 46%,
+    #d2ecff 74%,
+    #fff 100%
+  );
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ffffff', endColorstr='#ffffff', GradientType=0);
+}
+
+#wunbit-press .inner {
+  background: #42548e;
+  background: -webkit-gradient(
+    linear,
+    left top,
+    left bottom,
+    from(#42548e),
+    to(#6b668c)
+  );
+  background: linear-gradient(180deg, #42548e 0%, #6b668c 100%);
+  border-radius: 12px;
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#42548E', endColorstr='#6B668C', GradientType=1);
+}
+
+#wunbit-press img:not([srcset]) {
+  width: auto;
+  display: inline !important;
+  padding-right: 45px !important;
+  max-height: 75px !important;
+}
+
+#wunbit-press > div.row-bg-wrap > div.inner-wrap.using-image > div {
+  background-position: center !important;
+  background-repeat: no-repeat;
+  background-size: contain !important;
+  max-width: 100%;
+  /* width: 100%; */
+  display: block;
+  background-size: 1350px 398px !important;
+  height: 1225px;
+}
+
+#featured-games img:not([srcset]) {
+  border-radius: 20px;
+}
+
 /* Hero Section */
 #hero-section h1 {
   font-size: 52px;
@@ -43,7 +188,7 @@ header#top nav > ul {
 }
 
 #hero-section p {
-  font-size: 18px;
+  font-size: 25px;
 }
 
 #hero-section .nectar-highlighted-text em {
@@ -60,11 +205,8 @@ header#top nav > ul {
 }
 
 #hero-section .nectar-button span {
-  border-radius: 4px !important;
-  border-width: initial;
-  font-size: 26px;
-  text-transform: none;
-  padding: 20px;
+  padding: 5px 10px;
+  font-size: 24px;
 }
 
 /* Contact */
@@ -79,6 +221,7 @@ body:not([data-button-style*="rounded_shadow"])
   .nectar-button:not(.see-through):not(.see-through-2):not(.see-through-3) {
   border-radius: 4px !important;
   border-width: initial;
+  opacity: 1 !important;
 }
 
 /* Nectar */
@@ -571,6 +714,12 @@ body .ihc-register-3 .iump-form-line-register .select2-selection {
 }
 
 /* Responsive */
+@media only screen and (min-width: 1000px) {
+  .container {
+    max-width: 1280px !important;
+  }
+}
+
 @media only screen and (max-width: 1000px) and (min-width: 1px) {
   html body:not(.single-post) #page-header-bg:not(.fullscreen-header) {
     height: 0px !important;
