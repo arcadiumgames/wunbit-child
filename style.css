@@ -102,6 +102,38 @@ body[data-button-style]
   background-color: #4b9e3b !important;
 }
 
+/* Buttons */
+body .ihc-login-template-13 .impu-form-submit input,
+body .ihc-login-template-13 .ihc-register-link {
+  text-transform: none !important;
+  font-weight: 400 !important;
+  padding: 10px 5px !important;
+  font-size: 18px;
+  line-height: 1.5;
+  border-radius: 6px !important;
+  border-bottom: none !important;
+}
+
+body[data-button-style*="slightly_rounded"].ascend
+  .container-wrap
+  input[type="submit"] {
+  border-radius: 6px !important;
+  padding: 10px 5px !important;
+  width: 100% !important;
+}
+
+.ihc-login-template-13 .ihc-register-link {
+  background: #61bd4f !important;
+}
+
+.ihc-login-template-13 .ihc-register-link a {
+  color: #fff !important;
+}
+
+.ihc-sm-wrapp-fe {
+  margin: 0 !important;
+}
+
 /* Home */
 .get-started {
   background-image: url(https://d2k1ftgv7pobq7.cloudfront.net/meta/p/res/images/97db7688a52a697ea9376a5f0fe5d98f/trellians-2x-2.png);
@@ -131,15 +163,15 @@ body[data-button-style]
     left top,
     left bottom,
     from(#fff),
-    color-stop(46%, #f7ecff),
-    color-stop(74%, #d2ecff),
+    color-stop(46%, #fce3f7),
+    color-stop(74%, #d2edff),
     to(#fff)
   );
   background: linear-gradient(
     to bottom,
     #fff 0%,
-    #f7ecff 46%,
-    #d2ecff 74%,
+    #fce3f7 46%,
+    #d2edff 74%,
     #fff 100%
   );
   filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ffffff', endColorstr='#ffffff', GradientType=0);
@@ -174,7 +206,7 @@ body[data-button-style]
   /* width: 100%; */
   display: block;
   background-size: 1350px 398px !important;
-  height: 1225px;
+  height: 1375px;
 }
 
 #featured-games img:not([srcset]) {
@@ -698,10 +730,15 @@ body #footer-outer #copyright {
 
 .ihc-login-template-13 .impu-form-links-pass {
   font-size: 14px !important;
+  padding-top: 5px !important;
 }
 
 .ihc-login-template-13 .impu-temp5-row-left {
   margin-top: 0px !important;
+}
+
+.ihc-login-template-13 .impu-temp5-row {
+  margin: 0 !important;
 }
 
 body .ihc-register-3 .iump-form-line-register input[type="text"],
@@ -711,6 +748,99 @@ body .ihc-register-3 .iump-form-line-register textarea,
 body .ihc-register-3 .iump-form-line-register select,
 body .ihc-register-3 .iump-form-line-register .select2-selection {
   font-family: Varela Round !important;
+}
+
+.ihc-login-template-13 .impu-form-line-fr .impu-form-label-fr {
+  text-align: center !important;
+  padding-bottom: 10px !important;
+  font-size: 16px !important;
+}
+
+.ihc-top-social-login {
+  font-family: inherit !important;
+  font-size: 18px;
+  font-weight: 500;
+  color: #555;
+  margin: 5px 0 !important;
+}
+
+.ihc-sm-item-label {
+  font-size: 14px !important;
+  font-family: inherit !important;
+  float: none !important;
+}
+
+.ihc-sm-item.ihc-fb,
+.ihc-sm-item.ihc-goo {
+  width: 100%;
+}
+
+.impu-form-pass-additional-content {
+  color: inherit !important;
+  font-size: 16px !important;
+  text-align: left !important;
+  padding: 15px 15px 0 0px !important;
+}
+
+.impu-form-pass-return-login {
+  color: inherit !important;
+  font-size: 16px !important;
+  text-align: left !important;
+  padding: 15px 15px 0 0px !important;
+  text-align: center !important;
+  margin-top: 25px !important;
+  border-top: 1px solid #ddd;
+}
+
+#ihc_submit_bttn {
+  text-transform: none !important;
+  font-weight: 400 !important;
+  padding: 10px 5px !important;
+  font-size: 18px;
+  line-height: 1.5;
+  border-radius: 6px !important;
+  border-bottom: none !important;
+  background: #61bd4f !important;
+}
+
+.ihc-register-14 .ihc-login-link {
+  border-radius: 6px !important;
+  width: 100;
+  text-transform: none !important;
+  font-weight: 400 !important;
+  padding: 10px 5px !important;
+  font-size: 18px;
+  line-height: 1.5;
+  border-radius: 6px !important;
+  border-bottom: none !important;
+  background-color: #4b35ef !important;
+}
+
+.ihc-register-14 .ihc-login-link:hover {
+  background-color: #6754f1 !important;
+}
+
+.ihc-register-14 .ihc-login-link a {
+  color: #fff !important;
+}
+
+.ihc-register-14 .iump-register-row-left {
+  margin-top: 0px !important;
+}
+
+.ihc-login-template-13 .ihc-register-link:hover {
+  background-color: #79c76a !important;
+}
+
+.ihc-register-14 {
+  background-color: #ffffff !important;
+  border-radius: 3px !important;
+  padding: 25px 40px !important;
+  box-shadow: rgba(0, 0, 0, 0.1) 0 0 10px !important;
+  border: none !important;
+  display: block !important;
+  margin: 0 auto !important;
+  max-width: 400px;
 }
 
 /* Responsive */
@@ -738,6 +868,24 @@ body .ihc-register-3 .iump-form-line-register .select2-selection {
   #hero-section .nectar-button span {
     line-height: 32px !important;
   }
+
+  .wunbit-ecosystem-column {
+    margin-bottom: 45px !important;
+  }
+
+  body .home-start-playing {
+    margin-top: 80px !important;
+  }
+
+  #wunbit-press {
+    padding-top: 0 !important;
+    padding-bottom: 0 !important;
+  }
+
+  #wunbit-press img:not([srcset]) {
+    display: block !important;
+    padding-right: 0px !important;
+  }
 }
 
 @media only screen and (max-width: 1280px) and (min-width: 1001px) {
@@ -749,5 +897,39 @@ body .ihc-register-3 .iump-form-line-register .select2-selection {
 @media (min-width: 690px) {
   .span_5 {
     width: 100%;
+  }
+}
+
+@media only screen and (max-width: 690px) {
+  .row .span_2 h3,
+  .row .span_3 h3,
+  .row .span_4 h3,
+  .row .vc_col-sm-2 h3,
+  .row .vc_col-sm-3 h3,
+  .row .vc_col-sm-4 h3,
+  .row .col h3,
+  body h3 {
+    font-size: 32px !important;
+    line-height: 32px !important;
+  }
+
+  .ihc-login-template-13 {
+    width: 100%;
+  }
+
+  body[data-header-resize="0"] .container-wrap,
+  body[data-header-resize="0"] .project-title {
+    padding-top: 20px;
+  }
+
+  #hero-section p {
+    font-size: 20px;
+  }
+}
+
+@media only screen and (max-width: 1000px) and (min-width: 691px) {
+  #wunbit-press img:not([srcset]) {
+    display: inline !important;
+    padding-right: 15px !important;
   }
 }
