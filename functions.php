@@ -31,19 +31,19 @@ function no_description ($retstr) {
 	return $retstr ;
 	}
 	
-	add_filter ('bbp_get_single_topic_description', 'no_description' ) ;
-	add_filter ('bbp_get_single_forum_description', 'no_description' ) ;
-	
-	//This function changes the text wherever it is quoted
-	function change_translate_text( $translated_text ) {
-		if ( $translated_text == 'Your account has the ability to post unrestricted HTML content.' ) {
-		$translated_text = '';
-		}
-		if ( $translated_text == 'Oh bother! No topics were found here!' ) {
-		$translated_text = '';
-		}
-		return $translated_text;
+add_filter ('bbp_get_single_topic_description', 'no_description' ) ;
+add_filter ('bbp_get_single_forum_description', 'no_description' ) ;
+
+//This function changes the text wherever it is quoted
+function change_translate_text( $translated_text ) {
+	if ( $translated_text == 'Your account has the ability to post unrestricted HTML content.' ) {
+	$translated_text = '';
 	}
-	add_filter( 'gettext', 'change_translate_text', 20 );
+	if ( $translated_text == 'Oh bother! No topics were found here!' ) {
+	$translated_text = '';
+	}
+	return $translated_text;
+}
+add_filter( 'gettext', 'change_translate_text', 20 );
 
 ?>
